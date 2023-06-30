@@ -1,0 +1,12 @@
+{
+    "id":"MAX",
+    "trigger":"double_soul",
+    "effect":
+    [
+        {
+            "when":"forever",
+            "effect":"effect.stage(0,2)"
+        }
+    ],
+    "text":"【永】你的角色全部，魂傷+2。"
+}
