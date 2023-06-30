@@ -1,12 +1,12 @@
 WS效果指令表       規則: go.起點.終點(數量) 數量0為目標區的全部  
 
-控制室回到牌組             waiting_zone.deck
-支付X能                    stock.waiting_zone
-從能量區最上方支付X能量     top_stock.waiting_zone
-能量區送計時區              stock.clock_zone
-手牌X張丟到休息室           hand_card.waiting_zone
-手牌X張丟到能量區           hand_card.stock
-牌組X張到休息室             deck.waiting_zone
+控制室回到牌組             go.waiting_zone.deck
+支付X能                    go.stock.waiting_zone
+從能量區最上方支付X能量     go.top_stock.waiting_zone
+能量區送計時區              go.stock.clock_zone
+手牌X張丟到休息室           go.hand_card.waiting_zone
+手牌X張丟到能量區           go.hand_card.stock
+牌組X張到休息室             go.deck.waiting_zone
 
 判定    規則: check.目標位置.總類(數量,指定角色或標記)
 
