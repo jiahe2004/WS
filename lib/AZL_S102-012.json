@@ -1,3 +1,14 @@
 {
-    
+    "id":"CH",
+    "power":500,
+    "soul":1,
+    "tag":["艦船","ロイヤル"],
+    "trigger":"t_none",
+    "lev":0,
+    "cos":0,
+    "effect":
+    [
+        {},
+        {}
+    ]
 }

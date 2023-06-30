@@ -8,16 +8,17 @@
     "cos":0,
     "effect":[
         {
-            "when":"forever",
+            "c":"forever",
             "check":["check.stage_front.CH(1,AZL/S102-061)"],
             "effect":["effect.self(3000,1)"]
         },
         {
-            "when":"forever",
+            "c":"forever",
             "effect":["effect.CH(3000,1,AZL/S102-061)"]
         },
         {
-            "when":"auto1",
+            "c":"auto1",
+            "when":"when.hand_card.stage",
             "cost":["specify.hand_card.waiting_zone(1,0)"],
             "effect":["specify.deck.hand_card"]
         }
