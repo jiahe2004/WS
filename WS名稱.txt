@@ -1,0 +1,40 @@
+角色                CH
+事件                EV
+高潮(名場面)        MAX
+等級                LEV
+費用                COS
+助太刀              Counter_iten
+
+攻擊力              power
+爆擊標示            trigger
+魂傷                soul
+特徵                symbol
+顏色                color
+牌庫                deck
+手牌                hand_card
+能量區              stock
+等級區              level_zone
+計時區              clock_zone
+名場區              climax_zone
+舞台                stage
+前列                stage_front
+後列                stage_back
+休息室              waiting_zone
+回憶區              memory_zone
+//////////////////////////
+起                  start
+自                  auto
+永                  forever
+///////////名場///////////
+無                  t_none
+爆                  t_soul
+雙爆                double_soul
+火燒                shoot
+風吹                return
+金磚                treasure
+木門                comeback
+城門                gate
+開機                standby
+箭頭                choose
+書                  draw
+//////////
