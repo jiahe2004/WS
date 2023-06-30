@@ -1,6 +1,6 @@
-角色                CH
-事件                EV
-高潮(名場面)        MAX
+角色                CH 0
+事件                EV 1
+高潮(名場面)        MAX 2
 等級                LEV
 費用                COS
 助太刀              Counter_iten
@@ -23,8 +23,10 @@
 回憶區              memory_zone
 //////////////////////////
 起                  start
-自                  auto
+自(必發)            auto0
+自(選發)            auto1
 永                  forever
+永(在手上有效果)    f_h
 ///////////名場///////////
 無                  t_none
 爆                  t_soul
@@ -37,4 +39,6 @@
 開機                standby
 箭頭                choose
 書                  draw
-//////////
+/////////////////////////
+指定條件
+自身                self

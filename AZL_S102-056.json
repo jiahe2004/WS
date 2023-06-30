@@ -1,14 +1,25 @@
 {
-    "id":0,
+    "id":"CH",
     "power":500,
     "soul":1,
     "tag":["艦船","重桜"],
-    "card_tag":0,
+    "trigger":"t_none",
     "lev":0,
     "cos":0,
     "effect":[
-        {},
-        {},
-        {}
+        {
+            "when":"forever",
+            "check":"check.stage_front.CH(1,AZL/S102-061)",
+            "effect":"effect.self(3000,1)"
+        },
+        {
+            "when":"forever",
+            "effect":"effect.CH(3000,1,AZL/S102-061)"
+        },
+        {
+            "when":"auto1",
+            "cost":"specify.hand_card.waiting_zone(1,0)",
+            "effect":"specify.deck.hand_card"
+        }
     ]
 }
