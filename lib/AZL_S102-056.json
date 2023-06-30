@@ -9,17 +9,17 @@
     "effect":[
         {
             "when":"forever",
-            "check":"check.stage_front.CH(1,AZL/S102-061)",
-            "effect":"effect.self(3000,1)"
+            "check":["check.stage_front.CH(1,AZL/S102-061)"],
+            "effect":["effect.self(3000,1)"]
         },
         {
             "when":"forever",
-            "effect":"effect.CH(3000,1,AZL/S102-061)"
+            "effect":["effect.CH(3000,1,AZL/S102-061)"]
         },
         {
             "when":"auto1",
-            "cost":"specify.hand_card.waiting_zone(1,0)",
-            "effect":"specify.deck.hand_card"
+            "cost":["specify.hand_card.waiting_zone(1,0)"],
+            "effect":["specify.deck.hand_card"]
         }
     ],
     "text":"【永】有其他的你的前列的「山城」存在的話，此卡的攻擊力+3000，魂傷+1。\n【永】其他的你的「山城」全部，攻擊力+1000，魂傷+1。\n【自】［手牌的《艦船》的角色1張放到休息室］此卡從手牌被放置到舞台時，你可以支付代價。然後，你從自己的牌組選擇「山城」最多1張給對手確認，加到手牌，將那個牌組洗牌。"
