@@ -1,7 +1,8 @@
-
+import json
 from s.ws_start_user import *
 from s.auto1 import *
 
-go.waiting_zone.deck()
-start()
+with open('setting.json') as f:
+    setting = json.load(f)
+start(scream=setting["scream"])
 
