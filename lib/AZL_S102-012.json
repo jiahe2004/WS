@@ -1,6 +1,6 @@
 {
     "id":"CH",
-    "power":3000,
+    "power":500,
     "soul":1,
     "tag":["艦船","ロイヤル"],
     "trigger":"t_none",
@@ -8,5 +8,6 @@
     "cos":0,
     "effect":
     [
+        {},{}
     ]
 }
