@@ -5,7 +5,6 @@ from PIL import Image,ImageTk
 from s import *
 import os
 
-button = button()
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
