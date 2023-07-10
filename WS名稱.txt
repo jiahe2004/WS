@@ -64,4 +64,11 @@
 控制室到舞台時
 在計時區最上方時
 
+抽牌階段 draw_phase
+主要階段 main_phase
+名場階段 cmax_phase
+喊打階段 atk_phase
+安可階段 enco_phase
+結束階段 end_phase
+
 此卡喊打時候    when.attack.角色/自己
