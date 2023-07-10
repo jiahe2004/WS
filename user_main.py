@@ -3,9 +3,11 @@ import tkinter as tk
 import json
 from PIL import Image,ImageTk
 from s.auto1 import *
+from s.button import *
 import os
 import cv2
 
+button = button()
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -38,7 +40,12 @@ class WSTK:
         p = get_img(filename=".\\pic\\background.jpg",width=1280,height=720)
         background.create_image(640,360,image=p)
         background.pack()
-        WS.mainloop()
+    def menu(WS):
+        print("主畫面")
+    def edit_deck(WS):
+        print("編輯牌組")
+    def battle(WS):
+        print("戰鬥畫面")
 
         
 
@@ -50,5 +57,6 @@ class WSTK:
 if __name__ == '__main__':
     WS = tk.Tk()
     WSTK.start(WS,setting)
+    
     
 
