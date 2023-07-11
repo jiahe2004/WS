@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-import tkinter as tk
 import json
-from PIL import Image,ImageTk
 from s import *
 import os
 
@@ -12,8 +10,9 @@ with open('setting.json') as f:
     setting = json.load(f)
 
 if __name__ == '__main__':
-    WS = tk.Tk()
-    WSTK.start(WS,setting)
+    WS = WSTK(setting=setting)
+    WS.start()
+
     
     
 
