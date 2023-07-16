@@ -25,7 +25,8 @@ class WSTK():
     def clear(self):
         print("clear")
         for i in self.WS.winfo_children():
-            if str(i) == ".!canvas":
+            print(type(i))
+            if isinstance(i,type(tk.Canvas())):
                 pass
             else:
                 i.destroy()
