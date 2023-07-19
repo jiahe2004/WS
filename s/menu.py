@@ -13,7 +13,7 @@ def get_img(filename,width,height):
 
 
 class WSTK():
-    def __init__(self,setting):
+    def __init__(self,setting=list):
         self.WS = tk.Tk()
         self.set = setting
 
@@ -56,7 +56,7 @@ class WSTK():
         self.to_github.destroy()
         self.to_github=tk.Button(text="去github網頁",font=20)
         self.to_github.place(relx=0.45,rely=0.8,relwidth=0.1,relheight=0.05)
-
+        print(self.WS.winfo_screenwidth(),self.WS.winfo_screenheight())
         for i in self.WS.winfo_children():
             print(i)
         self.WS.mainloop()    
