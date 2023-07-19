@@ -8,6 +8,7 @@ PART = 8885
 def stop():
     """test"""
 
+
 class server:
     def __init__(self,mod=int) -> None:
         self.server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -15,9 +16,12 @@ class server:
         self.server.bind((HOST,PART))
         self.mod = mod
         self.switch1 = True
+        self.__server = threading.Thread(target=server.server(self))
     def star(self):
         self.server.listen(self.mod)
         print("server star")
+        
+    def server(self):
         while self.switch1:
             meg , addr = self.server.accept()
             print("call from: "+str(addr))
