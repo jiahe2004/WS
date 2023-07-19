@@ -1,0 +1,9 @@
+{
+    "name":"測試用的暴力東西",
+    "series":"AZL",
+    "deck":[
+        {"card_id":"AZL_S056","m":21},
+        {"card_id":"AZL_S061","m":21},
+        {"card_id":"AZL_T58","m":8}
+    ]
+}

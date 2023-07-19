@@ -11,7 +11,7 @@ with open('setting.json') as f:
 
 if __name__ == '__main__':
     WS = WSTK(setting=setting)
-    WS.start()
+    WS.menu()
 
     
     
