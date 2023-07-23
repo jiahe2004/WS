@@ -2,6 +2,8 @@ import PIL.Image,PIL.ImageTk
 import tkinter as tk
 import cv2
 from tkinter import *
+import server
+import threading
 def wh(setting,s):
     return setting["scream"][s]
 
@@ -46,7 +48,7 @@ class WSTK():
         self.to_github=tk.Button(text="去github網頁",font=20)
 
     def menu(self):
-        WSTK.set_to_menu(self)
+        self.set_to_menu()
         self.background.place(x=0,y=0,relheight=1,relwidth=1)
         self.to_edit.place(relx=0.45,rely=0.65,relwidth=0.1,relheight=0.05)
         self.to_battle.place(relx=0.45,rely=0.7,relwidth=0.1,relheight=0.05)
@@ -59,15 +61,24 @@ class WSTK():
         print(self.WS.winfo_screenwidth(),self.WS.winfo_screenheight())
         for i in self.WS.winfo_children():
             print(i)
-        self.WS.mainloop()    
+        self.WS.mainloop()
     def set_edit(self):
         print(",")
     def edit_menu(self):
         print("尚未施工")
     def set_battle_menu(self):
         """waiting"""
+    def battle_with_bot_test(self):
+        t_server()
     def battle_menu(self):
         print("尚未施工")
+    def open_server():
+        server.server.tserver.start()
+def t_server():
+    s = server.server()
+    s.server_mod()
+
+    
         
 
 

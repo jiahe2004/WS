@@ -9,33 +9,48 @@ def stop():
     """test"""
 
 
+
 class server:
+    
     def __init__(self,mod=int) -> None:
         self.server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         self.server.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
         self.server.bind((HOST,PART))
+        self.server.listen(self.mod)
         self.mod = mod
         self.switch1 = True
-        self.__server = threading.Thread(target=server.server(self))
-    def star(self):
-        self.server.listen(self.mod)
-        print("server star")
-        
-    def server(self):
-        while self.switch1:
-            meg , addr = self.server.accept()
-            print("call from: "+str(addr))
-            while True:
-                indata = meg.recv(1024)
-                if len(indata) == 0:
-                    meg.close()
-                    break
+    def server_mod(self):
+        self.login_c = False
+        self.deck_c = False
+        self.close_c = False
+        self.who , self.addr = self.server.accept()
+        self.server_c()
+    def server_c(self):
+        while not self.close_c:
+            try:
+                ""
+            except:
+                
+                """
+        while True:
+            indata = who.recv(1024)
+            if len(indata) == 0 or indata.decode() == "strict":
+                who.close()
+                break
+            if indata.decode() != "WS by try login" or not login_c:
+                who.send("error".encode())
+                break
+            else:
+                login_c = True
+
+
                 print('recv: '+indata.decode())
 
                 outdata = 'echo '+indata.decode()
-                meg.send(outdata.encode())
+                who.send(outdata.encode())
+        """
 if __name__ == "__main__":
-    server(1).star()
+    """"""
                     
             
 
